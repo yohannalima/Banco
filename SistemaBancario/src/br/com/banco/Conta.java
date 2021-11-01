@@ -9,7 +9,7 @@ public abstract class Conta {
 	private double saldo;
 	private double limiteSaqueDiario;
 	private boolean flagAtivo;
-	private int tipoConta; // 1- Corrente  2- Poupança
+	private int tipoConta; // 1- Corrente  2- PoupanÃ§a
 	private LocalDate dataCriacao;
 	
 	public Conta (int idConta, int idPessoa) {
@@ -52,7 +52,7 @@ public abstract class Conta {
 		if (tipoConta == 1) {
 			return "Conta Corrente";
 		}else {
-			return "Conta Poupança";
+			return "Conta PoupanÃ§a";
 		}
 	}
 	
