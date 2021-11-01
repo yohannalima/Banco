@@ -17,19 +17,6 @@ public abstract class Conta {
 		this.idPessoa = idPessoa;
 	}
 	
-	public void depositar(double valorDeposito) {
-		saldo += valorDeposito;
-	}
-	
-	public void sacar(double valorSaque) {
-		if (valorSaque <= saldo) {
-			saldo -= valorSaque;
-		}else {
-			System.out.println("Saldo insuficiente.");
-		}
-	}
-	
-
 	public int getIdConta() {
 		return idConta;
 	}
@@ -81,7 +68,5 @@ public abstract class Conta {
 	public void setDataCriacao(LocalDate dataCriacao) {
 		this.dataCriacao = dataCriacao;
 	}
-
-	
 	
 }

@@ -7,11 +7,11 @@ public class Main {
 		ContaCorrente novaConta = new ContaCorrente(123, 321);
 		System.out.println(novaConta.getTipoConta());
 		
-		novaConta.depositar(150);
-		System.out.println(novaConta.getSaldo());
-		
-		novaConta.sacar(200);
-		
+		Transacoes novasTransacoes = new Transacoes(123, 321);
+		novasTransacoes.depositar(100);
+		novasTransacoes.sacar(50);
+		novasTransacoes.depositar(50);
+		novasTransacoes.extrato();
 
 	}
 
